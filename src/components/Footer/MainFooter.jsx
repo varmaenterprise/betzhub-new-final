@@ -3,7 +3,7 @@ import logo from '../../assets/5_1.png'
 
 const MainFooter = () => {
   return (
-      <div className='md:grid md:grid-cols-3 gap-4 py-8 px-5 md:mx-10 flex flex-col text-white'>
+      <div className='md:grid md:grid-cols-3 gap-4 m-20 py-8 px-5 md:mx-10 flex flex-col text-white'>
           <div className='flex flex-col text-sm gap-3'>
              
               <h3>Betzhub is Asia’s one of the biggest gaming platforms with over 350 games and sports available.</h3>
@@ -11,7 +11,7 @@ const MainFooter = () => {
               <h3>With unlimited markets and odds, run567.co gives players the best gaming experience in the market.</h3>
           </div>
           <div className='flex flex-col gap-4'>
-            <div className='flex justify-center' style={{ marginTop: '-15rem' }}>
+            <div className='flex justify-center' style={{ marginTop: '-10rem' }}>
               <img src={logo} alt="Logo" className='w-21'/>
             </div>
             <div className='text-center'>
@@ -29,8 +29,8 @@ const MainFooter = () => {
               <img src={PaymentIcons} alt="Payment" className='h-25' />
               <div className='flex flex-col justify-center text-center gap-2 w-full'>
                   <h2 className='font-bold text-2xl'>Contact Us</h2>
-                  <h3 className='text-gray-500 text-2xl'>Whatsapp :918618521090</h3>
-                  <h3 className='text-gray-500 text-2xl'>Calling  :918037244677</h3>
+                  <h3 className='text-gray-500 text-xl'>Whatsapp :918618521090</h3>
+                  <h3 className='text-gray-500 text-xl'>Calling  :918037244677</h3>
 
               </div>
           </div>
