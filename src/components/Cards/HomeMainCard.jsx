@@ -7,14 +7,15 @@ const HomeMainCards = () => {
     const cardItems = [
         {
             image: batmanIcon, head: "Sports",
-            text1: "run567.com! Our team continues to work hard to make something special for all sports. we are very confident that we can exceed our players' expectations for a perfect gaming experience which encompasses a product with a wide variety of markets for punters to choose from.",
-            text2: "We offering many different types of sports to bet on. Some of the most popular ones are definitely cricket, football, tennis, basketball, horse racing, and many more.",
-            text3: "run567.com also provide live Streaming and real time score board on screen for ongoing matches during betting."
+            text1: "Our team continues to work hard to make something special for all sports..",
+            text2: " we are very confident that we can exceed our players' expectations for a perfect gaming experience which encompasses a product with a wide variety of markets for punters to choose from.",
+            text3: "We offering many different types of sports to bet on. Some of the most popular ones are definitely cricket, football, tennis, basketball, horse racing, and many more."
         }, {
             image: casinoIcon, head: "Casino",
-            text1: "We’ve all grown to love the typical brick and mortar casino but there’s just something about online casino that triumphs over the rest. At 3rdEmpire, we believe that playbutton, it’s become possible to play casino online from the comfort of your hnd vigorous jokers.",
-            text2: "If you’re looking to play online casino, run567.com is the place for you! Let us introduce you to the world of online casino with our selection of live dealer games like Andar Bahar, Teen Patti, Dragon Tiger, Black Jack, pocker and many more.",
-            text3: "So what are you waiting for? Join us to discover the ultimate casino experience and snatch a portion of the winnings!"
+            text1: "We’ve all grown to love the typical brick and mortar casino but there’s just something about online casino that triumphs over the rest",
+            text2: "At 3rdEmpire, we believe that playing casino online should be an experience of its own. With thousands of titles available at the click of a button, it’s become possible to play casino online from the comfort of your home",
+            text3: "All the while, sit back and immerse yourself in a world of mythical creatures and vigorous jokers.",
+            text4: "Let us introduce you to the world of online casino with our selection of live dealer games like Andar Bahar, Teen Patti, Dragon Tiger, Black Jack, pocker and many more."
         }
     ]
 
