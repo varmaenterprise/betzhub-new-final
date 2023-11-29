@@ -93,7 +93,7 @@ const TopNavbar = () => {
                 }
                 <div className=''>
                     <Link to='/'>
-                        <img src={logo} className='h-12 w-12 -mt-1.5' alt='Logo' />
+                        <img src={logo} className='h-15 w-14 -mt-1.5' alt='Logo' />
                     </Link>
                 </div>
 
@@ -102,7 +102,7 @@ const TopNavbar = () => {
                         <SearchBar />
                     </div>
                 ) : (
-                    <div className='pt-1.5 font-bold text-lg'>BETZHUB</div>
+                    <div className='pt-1 ml-2 font-bold text-3xl'>BETZHUB</div>
                 )}
             </div>
 

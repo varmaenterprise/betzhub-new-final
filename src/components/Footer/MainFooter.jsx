@@ -12,7 +12,7 @@ const MainFooter = () => {
           </div>
           <div className='flex flex-col gap-4'>
             <div className='flex justify-center'>
-              <img src={logo} alt="Logo" className='w-14' />
+              <img src={logo} alt="Logo" className='w-30' />
             </div>
             <div className='text-center'>
 
