@@ -27,20 +27,18 @@ const navList = [
 const TopNavbar = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const location = useLocation();
-    const navigate = useNavigate()
-    const { user, setUser } = useContext(AuthContext)
+    const navigate = useNavigate();
+    const { user, setUser } = useContext(AuthContext);
 
     const [registerModal, setRegisterModal] = useState(false);
     const [signInModal, setSignInModal] = useState(false);
     const [depositModal, setDepositModal] = useState(false);
     const [walletModal, setWalletModal] = useState(false);
 
-
-
     useEffect(() => {
         const userData = localStorage.getItem('betzhubUser');
-        setUser(JSON.parse(userData))
-    }, [navigate])
+        setUser(JSON.parse(userData));
+    }, [navigate]);
 
     const openRegisterModal = () => {
         setRegisterModal(true);
@@ -58,7 +56,6 @@ const TopNavbar = () => {
         setWalletModal(true);
     };
 
-
     const closeRegisterModal = () => {
         setRegisterModal(false);
     };
@@ -75,25 +72,22 @@ const TopNavbar = () => {
         setWalletModal(false);
     };
 
-
     const logoutfn = () => {
-        setUser(false)
-        localStorage.removeItem('betzhubToken')
-        localStorage.removeItem('betzhubUser')
-        setDropdownOpen(false)
-        toast.success('Logged out successfully')
-        navigate('/')
-    }
+        setUser(false);
+        localStorage.removeItem('betzhubToken');
+        localStorage.removeItem('betzhubUser');
+        setDropdownOpen(false);
+        toast.success('Logged out successfully');
+        navigate('/');
+    };
 
     return (
         <div className='flex z-50 justify-between border-b border-black bg-primary text-white fixed w-full p-1'>
             <div className='flex'>
-                {
-                    location.pathname !== "/" && <CarouselBar />
-                }
+                {location.pathname !== '/' && <CarouselBar />}
                 <div className=''>
                     <Link to='/'>
-                        <img src={logo} className='h-15 w-14 -mt-1.5' alt='Logo' />
+                        <img src={logo} className='h-12 w-12 -mt-1.5' alt='Logo' />
                     </Link>
                 </div>
 
@@ -102,14 +96,15 @@ const TopNavbar = () => {
                         <SearchBar />
                     </div>
                 ) : (
-                    <div className='pt-1 ml-2 font-bold text-3xl'>BETZHUB</div>
+                    <div className='pt-1.5 font-bold text-lg'>BETZHUB</div>
                 )}
             </div>
 
             <div className='p-1.5 md:block hidden' onClick={() => setDropdownOpen(false)}>
                 <ul className='flex space-x-6 text-sm font-medium'>
                     {navList?.map((item, index) => (
-                        <Link key={index}
+                        <Link
+                            key={index}
                             to={item?.href}
                             className={`${location.pathname === item?.href && 'bg-gray-50 text-gray-800'
                                 } hover:bg-gray-50 hover:text-gray-800 transition duration-300 px-3 py-1 rounded`}
@@ -134,14 +129,12 @@ const TopNavbar = () => {
                             <Wallet />
                         </UserModal>
 
-                        <button className='bg-red-400 px-2 py-1.5 m-0.5 font-bold rounded' onClick={openDepositModal} >
-
+                        <button className='bg-red-400 px-2 py-1.5 m-0.5 font-bold rounded' onClick={openDepositModal}>
                             <div className='flex gap-1'>
                                 <img src={addBoxIcon} alt='Wallet' className='w-4' />
                                 <p className='text-xs'>Deposit</p>
                             </div>
                         </button>
-
                         <UserModal isOpen={depositModal} closeModal={closeDepositModal}>
                             <Deposit />
                         </UserModal>
@@ -156,37 +149,50 @@ const TopNavbar = () => {
                             />
                             {isDropdownOpen && (
                                 <ul className='absolute right-0 z-10 mt-3 py-3 items-end list-none overflow-hidden rounded-md border-none backdrop-blur-2xl bg-white/30 bg-clip-padding text-left text-base shadow-lg'>
-
-                                    {UserOptions?.map((item, index) =>
+                                    {UserOptions?.map((item, index) => (
                                         <li key={index}>
-                                            <Link to={item?.href} onClick={() => setDropdownOpen(!isDropdownOpen)}
-                                                className='block w-full whitespace-nowrap px-4 py-1 hover:bg-white text-primary text-xs rounded-sm font-semibold' >
+                                            <Link
+                                                to={item?.href}
+                                                onClick={() => setDropdownOpen(!isDropdownOpen)}
+                                                className='block w-full whitespace-nowrap px-4 py-1 hover:bg-white text-primary text-xs rounded-sm font-semibold'
+                                            >
                                                 <div className='flex'>
-
                                                     <img src={item?.icon} alt='Settings' className='w-3 mt-0.5 absolute left-3 ' />
                                                     <div className='pl-4'>{item?.name}</div>
                                                 </div>
                                             </Link>
                                         </li>
-                                    )}
-
+                                    ))}
                                     <li>
-                                        <div onClick={logoutfn}
-                                            className='block w-full whitespace-nowrap px-4 py-1 hover:bg-white text-primary text-xs rounded-sm font-semibold cursor-pointer' >
+                                        <div
+                                            onClick={logoutfn}
+                                            className='block w-full whitespace-nowrap px-4 py-1 hover:bg-white text-primary text-xs rounded-sm font-semibold cursor-pointer'
+                                        >
                                             <div className='flex'>
                                                 <img src={logoutIcon} alt='Settings' className='w-3 mt-0.5 absolute left-3 ' />
                                                 <div className='pl-4'>Sign Out</div>
                                             </div>
                                         </div>
                                     </li>
-
                                 </ul>
                             )}
                         </div>
+                        {/* Add the Demo button */}
+                        <Link to='/sports'>
+                            <button className='bg-red-400 hover:bg-gray-50 hover:text-gray-800 transition duration-300 px-3 py-1 font-bold rounded'>
+                                DEMO
+                            </button>
+                        </Link>
                     </>
                 ) : (
-
                     <>
+                     
+                            <button className='bg-red-400 hover:bg-gray-50 hover:text-gray-800 transition duration-300 px-3 py-1 font-bold rounded'>
+                               <Link to="/sports">DEMO</Link> 
+                            </button>
+                        
+
+
                         <button className='bg-red-400 hover:bg-gray-50 hover:text-gray-800 transition duration-300 px-2 md:px-3 py-1.5 font-bold rounded' onClick={openSigInModal}>
                             SIGN IN
                         </button>
@@ -201,9 +207,10 @@ const TopNavbar = () => {
                             <SignUp />
                         </UserModal>
 
+                        {/* Add the Demo button */}
+                       
                     </>
                 )}
-
             </div>
         </div>
     );

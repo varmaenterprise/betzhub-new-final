@@ -2,7 +2,7 @@ import gamingHead from '../../assets/capture.png'
 
 const MiniFooter = () => {
     return (
-        <div className='md:grid md:grid-cols-3 md:gap-4 my-8 flex flex-col justify-center items-center'>
+        <div className='md:grid md:grid-cols-3 md:gap-4  my-8 flex flex-col justify-center items-center'>
             <div className='flex justify-center items-center'>
                 <img src={gamingHead} alt="Head" className='h-30' />
             </div>

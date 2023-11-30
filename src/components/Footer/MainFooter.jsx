@@ -8,7 +8,7 @@ const MainFooter = () => {
              
               <h3>Betzhub is Asia’s one of the biggest gaming platforms with over 350 games and sports available.</h3>
               <h3>Popular sports such as Cricket, Tennis, Football, Basketball, Volleyball and many more including Indian card games like Teen Patti and Andar Bahar are also available from various worldwide gaming providers.</h3>
-              <h3>With unlimited markets and odds, run567.co gives players the best gaming experience in the market.</h3>
+              <h3>With unlimited markets and odds, Betzhub gives players the best gaming experience in the market.</h3>
           </div>
           <div className='flex flex-col gap-4'>
             <div className='flex justify-center' style={{ marginTop: '-10rem' }}>
