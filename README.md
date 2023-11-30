@@ -1,4 +1,4 @@
-# RUN567 Clone Project
+# 
 
 This project is a React application created with Vite and TailwindCSS that serves as a frontend website. It aims to replicate the user interface and some functionalities of the original website.
 
