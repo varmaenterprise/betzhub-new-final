@@ -19,6 +19,11 @@ import AdminLayout from "../pages/Admin/Layout";
 import UserTable from "../components/Admin/Tables/UserTable";
 import UserList from "../pages/Admin/UserList";
 import AdminList from "../pages/Admin/AdminList";
+import Aboutus from "../components/content/Aboutus";
+import KYC from "../pages/KYC";
+import Responsiblegambling from "../pages/Responsiblegambling";
+import Termsandconditions from "../pages/Termsandconditions";
+
 
 const router = createBrowserRouter([
     {
@@ -56,7 +61,25 @@ const router = createBrowserRouter([
             }, {
                 path: '/open-bets',
                 element: <PrivateRoute><OpenBets /></PrivateRoute>,
-            }
+            },
+            {
+                path: "/about-us",
+                element: <Aboutus />,
+              },
+              {
+                path: "/kyc",
+                element: <KYC />
+              },
+              {
+                path: "/responsible-gambling",
+                element: <Responsiblegambling/>
+              },
+              {
+                path: "/Termsandconditons",
+                element: <Termsandconditions/>
+              }
+              
+             
         ]
     }, {
         path: '/admin/login',
