@@ -1,5 +1,6 @@
 import PaymentIcons from '../../assets/payment-icon-group.svg'
 import logo from '../../assets/5_1.png'
+import { Link } from 'react-router-dom'
 
 const MainFooter = () => {
   return (
@@ -34,6 +35,23 @@ const MainFooter = () => {
                   
                   <h3 className='text-gray-500 text-xl'>Whatsapp :918618521090</h3>
                   <h3 className='text-gray-500 text-xl'>Calling  :918037244677</h3>
+                  <h6 className="flex items-center justify-center space-x-4 text-sm font-poppins">
+      <Link to="/about-us" className="hover:text-gray-500 transition duration-300">
+        About Us
+      </Link>
+       
+      <Link to="/kyc" className="hover:text-gray-500 transition duration-300 m-5">
+        KYC Policy
+      </Link>
+       
+      <Link to="/terms-conditions" className="hover:text-gray-500 transition duration-300">
+        Terms & Conditions
+      </Link>
+      
+      <Link to="/responsible-gambling" className="hover:text-gray-500 transition duration-300">
+        Responsible Gambling
+      </Link>
+    </h6>
 
               </div>
           </div>
