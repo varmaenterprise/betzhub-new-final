@@ -24,10 +24,10 @@ const HomeMiniBanner = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setOffset((prevOffset) => (prevOffset - 100) % (bannerDatas.length * 100)); // Adjust 100 based on your item width
-    }, 1000); // Change data every 1000 milliseconds (1 second)
+      setOffset((prevOffset) => (prevOffset - 100) % (bannerDatas.length * 100)); 
+    }, 1000); 
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
+    return () => clearInterval(interval); 
   }, [bannerDatas.length]);
 
   return (

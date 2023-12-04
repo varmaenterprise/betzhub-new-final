@@ -40,5 +40,9 @@ export const ReviewList = [
         name: 'Maya',
         rating: 5,
         text: 'Bet big, win bigger on our user-friendly web platform. Explore a diverse selection of games and seamlessly transition between gaming and betting. Your journey to massive wins begins with a click.'
-    }
+    },{
+        name: 'Rahul',
+        rating: 3,
+        text: 'Discover the perfect blend of fun and fortune in our gaming and betting web app. Engage in thrilling games, place real money bets, and watch as the excitement unfolds. Your entertainment journey just got a whole lot more rewarding.'
+    },
 ]
