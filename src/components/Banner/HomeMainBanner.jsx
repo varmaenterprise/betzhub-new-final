@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import bannerImg from '../../assets/premium-photo---3d-rendering-online-gambling-1@2x.png'
+import bannerImg from '../../assets/ban.png'
 import React from 'react'
 
 const HomeMainBanner = () => {
