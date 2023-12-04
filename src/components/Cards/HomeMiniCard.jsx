@@ -6,7 +6,7 @@ const HomeMiniCards = () => {
     return (
         <div>
             <div className='flex justify-center w-full text-white font-bold text-xl uppercase mb-4'>Reviews</div>
-            <div className='bg-gray-800'>
+            <div className='bg-black-700'>
                 <div className='flex gap-6 p-10 overflow-x-auto'>
 
                     {ReviewList?.map((item, index) => (
