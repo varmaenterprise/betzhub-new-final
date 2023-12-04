@@ -44,7 +44,7 @@ const MainFooter = () => {
         KYC Policy
       </Link>
        
-      <Link to="/terms-conditions" className="hover:text-gray-500 transition duration-300">
+      <Link to="/Termsandconditons" className="hover:text-gray-500 transition duration-300">
         Terms & Conditions
       </Link>
       

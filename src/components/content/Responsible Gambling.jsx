@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Gambling = () => {
+const ResponsibleGaming = () => {
   return (
     <div class="max-w-4xl mx-auto bg-white p-6 rounded-md shadow-md">
     <div class="mb-6 flex items-center justify-center">
@@ -120,4 +120,4 @@ const Gambling = () => {
   )
 }
 
-export default Gambling
+export default ResponsibleGaming

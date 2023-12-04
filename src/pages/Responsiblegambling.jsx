@@ -1,6 +1,6 @@
 import React from 'react';
 import SportsBanner from '../components/Banner/SportsBanner';
-import Gambling from '../components/content/gambling';
+import Gambling from '../components/content/Responsible Gambling';
 
 
 
