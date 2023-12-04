@@ -26,7 +26,7 @@ const HomeMiniBanner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % bannerDatas.length);
-    }, 1000); // Change data every 100 milliseconds
+    }, 1000); 
 
     return () => clearInterval(interval); 
   }, [bannerDatas.length]);
