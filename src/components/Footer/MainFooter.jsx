@@ -12,7 +12,7 @@ const MainFooter = () => {
           </div>
           <div className='flex flex-col gap-4'>
             <div className='flex justify-center' style={{ marginTop: '-10rem' }}>
-              <img src={logo} alt="Logo" className='w-21'/>
+              <img src={logo} alt="Logo" />
             </div>
             <div className='text-center'>
 
@@ -28,7 +28,10 @@ const MainFooter = () => {
               <h2 className='text-xl font-bold'>Accepted Modes Of Payments</h2>
               <img src={PaymentIcons} alt="Payment" className='h-25' />
               <div className='flex flex-col justify-center text-center gap-2 w-full'>
+              
+
                   <h2 className='font-bold text-2xl'>Contact Us</h2>
+                  
                   <h3 className='text-gray-500 text-xl'>Whatsapp :918618521090</h3>
                   <h3 className='text-gray-500 text-xl'>Calling  :918037244677</h3>
 

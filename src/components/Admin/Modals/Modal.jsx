@@ -10,6 +10,7 @@ const CustomModal = ({ isOpen, closeModal, children }) => {
             left: '50%',
             right: 'auto',
             bottom: 'auto',
+            width:'30pc',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
             position: 'absolute',
